@@ -1,0 +1,606 @@
+body{
+    margin: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5000; 
+    color: white; 
+    width: 60px; 
+    height: 50px; 
+    border-radius: 50px 0 50px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.chat-box img {
+    width: 40px; /* Adjust the size of the icon inside */
+}
+
+
+.fixed-top-bar {
+background-color: white; /* Choose a background color */
+color: black; /* Choose a text color */
+padding: 10px 0; /* Add some space above and below the text */
+/* This is the important part that makes it stay at the top */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100; /* Make sure it stays on top of other content */
+}
+
+/* You might need to add some padding to the top of your body or the element below the fixed bar so that the fixed bar doesn't cover your content when you first load the page. */
+body {
+padding-top: 72px; /* Adjust this value based on the height of your fixed bar */
+}
+
+.fixed-top-bar table {
+    width: 100%; /* Make the table take the full width of the bar */
+    border-collapse: collapse; /* Remove default table cell spacing */
+  }
+
+  .fixed-top-bar td {
+    padding: 3px; /* Add some padding around the content in each cell */
+    text-align: center; /* Center the content in each cell (you can adjust this) */
+  }
+
+  .ride-or-die-text {
+    font-family: 'Arial Black', sans-serif; /* A bold and strong font */
+    font-size: 2em; /* Make the text larger */
+    color: #ff5000; /* A vibrant orange color (you can change this) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+    letter-spacing: 1px; /* Add a little space between letters */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add a smooth transition for hover effects */
+    width: 300px; 
+    white-space: nowrap;
+}
+
+/* Optional: Add a hover effect */
+.ride-or-die-text:hover {
+    transform: scale(1.2); /* Slightly enlarge the text on hover */
+    color: #d64400; /* Change color on hover (you can choose another color) */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Enhance the shadow on hover */
+    cursor: pointer;
+}
+.separator-image {
+    width: 50px; /* Adjust the width as needed */
+    vertical-align: middle;
+}
+  .fixed-top-bar input[type="text"] {
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(242, 236, 236);
+    padding-right: 150px;
+  }
+
+  .fixed-top-bar button {
+    background-color: #ff5000; /* Example button color */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 39px;
+    width: 40px;
+  } 
+
+  .huhu {
+    white-space: nowrap;
+    width: 100px; 
+    cursor: pointer;
+    
+  }
+  .huhu img:hover, .huhu span:hover {
+    cursor: pointer;
+  }
+  .huhu:hover{
+    background-color: lightgray;
+    border-radius: 50px; 
+  }
+  .huhu img{
+    vertical-align: middle; 
+    margin-bottom: 6px; 
+    width: 30px;
+  }
+  .haha{
+    width: 60px; 
+    background-color: #ff5000; 
+    border-radius: 20px; 
+    color: white;
+    white-space: nowrap;
+  }
+  .haha:hover {
+    background-color: darkorange ;
+    border-radius: 20px; /* Optional: Add a slight rounded border to the cell */
+    /* You might want to add some padding to the cell if it looks too tight */
+    /* padding: 5px; */
+    cursor: pointer;
+  }
+.header{
+    background-image: url('../pic/footerBackground.jpg');
+    height: 380px;
+    background-size: 100% 100%;
+    display: flex; /* Enable flexbox for vertical centering */
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+.header h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.header-options-bar {
+    display: flex; /* This is the key to horizontal layout */
+    align-items: center; /* Vertically align items in the middle of the bar */
+    padding: 13px; /* Adjust padding for the bar */
+    background-color: white; /* White background for the bar */
+    border-radius: 100px; /* For rounded corners */
+    width: fit-content; /* Adjust width to fit content */
+    margin: 10px auto; /* Center the bar horizontally and add some top/bottom margin */
+}
+
+.search-input-container input[type="text"] {
+    padding: 10px 15px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 100px;
+    font-size: 1em;
+    background-image: url('../pic/black\ mag\ glass.png'); /* Replace with the actual path to your icon */
+    background-repeat: no-repeat;
+    background-position: left 1px center; /* Position the icon on the right */
+    background-size: 20px; /* Adjust the size of the icon as needed */
+    outline: none; /*not to show the outline when clicking on it*/
+}
+
+.select-dates {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #777;
+    white-space: nowrap; 
+}
+
+.number-of-bikes {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #777;
+    white-space: nowrap; 
+}
+
+.arrow-button {
+    background-color: #ff5000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.menu{
+    width: 200px;
+    float: left;
+    background-color: #f8f8f8; /* Light background color for the menu */
+    padding-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the list items display horizontally */
+    align-items: center; /* Vertically align the items in the center */
+    flex-direction: column;
+}
+
+
+
+.menu li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Dark text color */
+    padding: 8px 10px; /* Add padding inside the links for better click area */
+    border-radius: 5px; /* Optional: Add rounded corners to the links */
+    font-size: 1.3rem;
+}
+
+.menu li{
+    margin-top: 30px;
+}
+
+.menu li a:hover {
+    background-color: #ddd; /* Light background color on hover */
+}
+.content{
+    background-color: rgb(234, 240, 240);
+    width: auto;
+
+    margin-left: 205px;
+    margin-right: 185px;
+    min-height: 300px;
+    word-wrap: break-word; /* This will make the long text wrap */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ads{
+    width: 180px;
+    float: right;
+    min-height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-pic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image take the full width of the parent */
+    height: 100%; /* Make the image take the full height of the parent */
+    z-index: -1;
+    /* object-fit: cover; Or 'contain', 'fill', etc., depending on your desired effect */
+}
+.second-pic img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.ad-subtitle {
+    position: absolute;
+    top: 70px;
+    color: #ADD8E6; /* Light Blue (a lighter shade than the background) */
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Brush Script MT", cursive; /* A classic script font */
+  word-spacing: 5px;
+
+}
+
+.ad-call-to-action {
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    background-color: #3779bf;
+    border-radius: 20px;
+    outline: 3px solid rgb(147, 142, 209);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.ad-call-to-action:hover{
+    transform: scale(1.1);
+    text-shadow: #007bff;
+}
+
+
+
+
+
+  
+
+
+
+
+    
+    
+    .frequently-booked {
+        margin-bottom: 20px; /* Add some space below the section */
+        position: relative;
+        padding: 20px;
+    }
+    .parent-scroll{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .frequently-booked h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        text-align: left; /* Align the title to the left */
+    }
+    .scroll-buttons {
+        padding: 4px 7px;
+        margin-left: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    .bike-list {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        /*padding-bottom: 15px; /* Add some padding for the scrollbar */
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+    
+    .bike-card {
+        background-color: #f9f9f9; /* Light background for each card */
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-right: 20px; /* Space between cards */
+        width: 300px; /* Adjust the width of each card */
+        flex: 0 0 auto; /* Don't grow, don't shrink, base width is auto */
+    }
+    
+    .bike-card:last-child {
+        margin-right: 0; /* Remove margin from the last card */
+    }
+    .bike-card:hover{
+        cursor: pointer;
+    }
+    .bike-image {
+        position: relative;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden; /* Clip the image to the rounded corners */
+    }
+    
+    .bike-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #007bff; /* Blue tag color */
+        color: white;
+        padding: 5px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+    }
+    
+    .tag.instant-booking {
+        background-color: #ffc107; /* Yellow for instant booking */
+    }
+    
+    .bike-details {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    .bike-name {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    
+    .bike-location {
+        color: #777;
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+    
+    .bike-description {
+        font-size: 0.95em;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    
+    .price-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .price strong {
+        font-size: 1.1em;
+        color: #ff5000; /* Orange price color */
+    }
+    
+    .price p {
+        margin: 0;
+        font-size: 0.9em;
+    }
+    
+    .rating {
+        color: #ffc107; /* Yellow star color */
+        font-size: 0.9em;
+    }
+    .recently-booked{
+        padding: 20px;
+    }
+
+    
+
+  
+
+
+
+
+
+    .popular-cities{
+        background-color: #ff5000;
+        padding: 30px;
+    }
+    .popular-cities h3{
+        color: white;
+        font-size: 1.2rem;
+    }
+    .popular-cities button{
+        background-color: white;
+        color: #333; /* Dark text color */
+        border: none;
+        border-radius: 10px; /* Creates the rounded corners */
+        padding: 8px 15px; /* Adjust padding for button size */
+        cursor: pointer;
+        font-size: 1em; /* Adjust font size as needed */
+        margin-bottom: 5px; /* Optional: Add a little space below each button */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    .footer {
+        clear: both;
+        background-color: #f8f8f8; /* Light gray background for the footer */
+        padding-bottom: 45px; /* Adjust padding as needed */
+        padding: 40px;
+        font-size: 1.1em;
+        color: #555;
+        margin-top: 5px;
+        
+    }
+    
+    .footer-top {
+        display: flex;
+        justify-content: space-around; /* Distribute space evenly between columns */
+        align-items: flex-start;
+        padding-bottom: 0px;
+        padding-top: 100px;
+        border-bottom: 1px solid black; /* Add a subtle separator */
+        border-top: 1px solid rgb(112, 106, 106);
+    }
+    .footer-links h4 {
+        font-size: 1em;
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links ul li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-links ul li a {
+        text-decoration: none;
+        color: #555;
+    }
+    
+    .footer-links ul li a:hover {
+        color: #b5a9a9; 
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    .bottom-links a{
+        padding: 10px;
+        color: #555;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    
+    .footer-bottom .bottom-links a:hover {
+        color: #b5a9a9;
+    }
+    
+    .footer-bottom .bottom-links > div {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+    
+    .footer-bottom .bottom-links > div:last-child {
+        margin-right: 0;
+    }
+    
+    .footer-bottom .language-selector {
+        cursor: pointer;
+    }
+    
+    .footer-bottom .chat-icon-bottom {
+        cursor: pointer;
+    }
+    
+    /* Responsive adjustments (optional) */
+    @media (max-width: 768px) {
+        .footer-top {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .footer-links {
+            margin-top: 20px;
+        }
+        .footer-links.top-countries ul {
+            columns: 1;
+            -webkit-columns: 1;
+            -moz-columns: 1;
+        }
+        .footer-bottom {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .footer-bottom .bottom-links a {
+            margin: 5px 10px;
+        }
+        .footer-bottom .bottom-links > div {
+            margin: 5px 10px;
+        }
+    }
+
+
+
+
+
+   
+
+
+ 
